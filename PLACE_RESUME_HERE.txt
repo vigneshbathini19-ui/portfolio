@@ -1,0 +1,7 @@
+Put your actual resume PDF in this folder and name it "resume.pdf".
+
+The site expects it at the root of the deployed site: /resume.pdf
+(the "Download Resume" buttons in the navbar and hero already link there).
+
+If you'd rather keep it elsewhere, update the two `href="/resume.pdf"`
+links in index.html to match.

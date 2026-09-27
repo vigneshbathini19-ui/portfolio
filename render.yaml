@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: bathini-vignesh-portfolio
+    runtime: static
+    buildCommand: "echo 'No build step required'"
+    staticPublishPath: ./
+    pullRequestPreviewsEnabled: false
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: SAMEORIGIN
